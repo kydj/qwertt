@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApp555.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp555"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid Loaded="Grid_Loaded">
+        <TabControl Padding="0,0,2,2">
+            <TabItem Header="Вакансии" Margin="-2,-2,-120,0">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="319*"/>
+                        <ColumnDefinition Width="477*"/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="datagrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,61" Grid.ColumnSpan="2"/>
+                    <Button Content="Показать вакансии" HorizontalAlignment="Left" Margin="0,345,0,0" VerticalAlignment="Top" FontSize="18" Height="41" Width="195" Click="Button_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Составление резюме" Margin="116,-2,-203,0">
+                <Grid Background="#FFE5E5E5">
+                    <TextBlock HorizontalAlignment="Left" Margin="31,20,0,0" TextWrapping="Wrap" Text="ФИО" VerticalAlignment="Top" FontSize="20" Height="30"/>
+                    <TextBox  x:Name="TextBox1" HorizontalAlignment="Left" Margin="158,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="447" FontSize="20" Height="41"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="31,86,0,0" TextWrapping="Wrap" Text="Возраст" VerticalAlignment="Top" FontSize="20" Height="31" RenderTransformOrigin="0.392,-0.094"/>
+                    <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Margin="158,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="447" FontSize="20" Height="41"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="31,150,0,0" TextWrapping="Wrap" Text="Стаж работы" VerticalAlignment="Top" FontSize="20" Height="31"/>
+                    <TextBox x:Name="TextBox3" HorizontalAlignment="Left" Margin="158,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="447" FontSize="20" Height="40"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="31,226,0,0" TextWrapping="Wrap" Text="Желаемая должность" VerticalAlignment="Top" FontSize="20" Height="31"/>
+                    <TextBox x:Name="TextBox4" HorizontalAlignment="Left" Margin="255,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="447" FontSize="20" Height="41"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="31,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="31"><Run Language="ru-ru" Text="Ожидаемая зарплата"/></TextBlock>
+                    <TextBox x:Name="TextBox5" HorizontalAlignment="Left" Margin="255,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="447" FontSize="20" Height="41"/>
+
+
+                    
+                    <Button Content="Отправить резюме" Margin="561,342,0,0" FontSize="18" Height="41" Width="206" Click="Button_Click_1" HorizontalAlignment="Left" HorizontalContentAlignment="Center" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top"/>
+                    <MediaElement Source="Resources\Pepe.gif" x:Name="Pepe" LoadedBehavior="Manual" Visibility="Visible"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
