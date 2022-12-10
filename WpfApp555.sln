@@ -17,7 +17,8 @@ Global
 		{B3676B42-6F66-4D48-A071-51FB4A0198D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
+		HideSolutionNode = TRUE
+		Adress dfldslbl837127
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {38AC98AA-9850-47B2-A0F8-AC416C3BDC1F}
